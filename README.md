@@ -7,7 +7,7 @@ Usually, one has to iterate through each array, doing explicit casts and/or a bu
 #Usage
 * Create your view holders.
 ```
-    private static class MyModelViewHolder extends RecyclerView.ViewHolder {
+    private class MyModelViewHolder extends RecyclerView.ViewHolder {
 
         private final TextView name;
         private final TextView lastname;
@@ -21,7 +21,7 @@ Usually, one has to iterate through each array, doing explicit casts and/or a bu
 ```
 * Create your custom Group classes (inheriting from the Group class).
 ```
-private static class MyModelGroup extends Group<MyModel, MyModelViewHolder> {
+private class MyModelGroup extends Group<MyModel, MyModelViewHolder> {
 
 }
 ```

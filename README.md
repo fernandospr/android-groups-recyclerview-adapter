@@ -5,6 +5,17 @@ Usually, one has to iterate through each array, doing explicit casts and/or a bu
 **GroupsRecyclerViewAdapter** allows to add groups of items (it could also be a group of a single item, e.g. a header or a footer), easing the development of the use cases mentioned above.
 
 # Usage
+
+* Suppose you have the following MyModel class.
+```
+public class MyModel {
+    private String name;
+    private String lastname;
+
+    // getters/setters
+}
+```
+
 * Create your view holders.
 ```
     private class MyModelViewHolder extends RecyclerView.ViewHolder {
